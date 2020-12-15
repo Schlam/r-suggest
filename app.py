@@ -37,6 +37,10 @@ def predict():
     return render_template('result.html',prediction = my_prediction)
 
 
+@app.route('home')
+def go_back_home():
+    
+    return url_redirect('/')
 
 if __name__ == '__main__':
 
