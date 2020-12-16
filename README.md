@@ -1,5 +1,5 @@
 <div align="center">
-    <h1><b>r/Suggest</b> - get forum suggestions with machine learning</h1>
+    <h1><b>r/Suggest</b> - get ML-generated forum suggestions</h1>
     <img src="images/r_suggest3x.gif">
 </div>
 
