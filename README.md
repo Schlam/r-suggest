@@ -1,14 +1,11 @@
-# r/Suggest
+<div align="center">
+    <h1><b>r/Suggest</b> - get forum suggestions with machine learning</h1>
+    <img src="images/r_suggest3x.gif.gif">
+</div>
 
 Direct a user to an appropriate reddit forum using the language model shown [here](https://github.com/schlam/reddit-lsa-classifier/)
 
-## Results
-
-![gif](images/r_suggest3x.gif))
-
-Great!
-
-### 
+### Thoughts
 
 Looking forward to scaling this up with more forums
 (model only predicts on ten at the moment),
