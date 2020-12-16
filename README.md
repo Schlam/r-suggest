@@ -1,6 +1,8 @@
 <div align="center">
-    <h1><b>r/Suggest</b> - get ML-generated forum suggestions</h1>
+    <h1><b>r/Suggest</b> </h1>
+    <h2>ML-generated forum suggestions</h2>
     <img src="images/r_suggest3x.gif">
+    <p>👽</p>
 </div>
 
 Direct a user to an appropriate reddit forum using the language model shown [here](https://github.com/schlam/reddit-lsa-classifier/)
