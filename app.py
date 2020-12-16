@@ -1,42 +1,41 @@
-from flask import Flask,render_template,url_for,request,redirect
-import numpy as np
-import pickle
-import pandas as pd
-# import flasgger
-# from flasgger import Swagger
+# Dependencies for language model
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegressionCV
 from sklearn.decomposition import TruncatedSVD
-# from sklearn.externals import joblib
+# Dependencies for this code
+from flask import Flask, render_template, url_for, request, redirect
+import numpy as np
+import pickle
+import pandas as pd
 import re
 
 
-app = Flask(__name__)
-# Swagger(app)
 
+app = Flask(__name__)
+
+
+# Text preprocessor used in model pipeline
 def preprocessor(text):
     pattern = (r"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|"\
              + r"[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+")
     return re.sub(pattern, '', text)
 
+
+# Load model from pickle
 model = pickle.load(open('model.pkl','rb'))
+
+
 
 @app.route('/')
 def home():
     return render_template('home.html')
 
-
 @app.route('/predict',methods=['POST'])
 def predict():
-
     if request.method == 'POST':
         Reviews = request.form['Reviews']
-        data = [Reviews]
-        my_prediction = model.predict(data)
-
+        my_prediction = model.predict([Reviews])
     return render_template('result.html',prediction = my_prediction)
-
-
 
 @app.route('/github')
 def see_github():
