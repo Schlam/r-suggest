@@ -4,17 +4,7 @@ Direct a user to an appropriate reddit forum using the language model shown [her
 
 ## Results
 
-Let's put this semantic classifier to the test...
-
-![question1](images/question1.png)
-
-![answer1](images/answer1.png)
-
-Not bad!
-
-![question2](images/question2.png)
-
-![answer2](images/answer2.png)
+![gif](images/r_suggest3x.gif))
 
 Great!
 

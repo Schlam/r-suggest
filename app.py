@@ -1,4 +1,4 @@
-from flask import Flask,render_template,url_for,request
+from flask import Flask,render_template,url_for,request,redirect
 import numpy as np
 import pickle
 import pandas as pd
@@ -37,10 +37,15 @@ def predict():
     return render_template('result.html',prediction = my_prediction)
 
 
-@app.route('home')
-def go_back_home():
-    
-    return url_redirect('/')
+
+@app.route('/github')
+def see_github():
+    return redirect('https://github.com/Schlam/r-suggest')
+
+@app.route('/mygithub')
+def see_my_github():
+    return redirect('https://github.com/Schlam')
+
 
 if __name__ == '__main__':
 
