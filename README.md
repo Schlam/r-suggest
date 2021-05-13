@@ -2,13 +2,8 @@
 
 Direct a user to an appropriate reddit forum using the language model shown [here](https://github.com/schlam/reddit-lsa-classifier/)
 
-## Results
 
-![gif](images/r_suggest3x.gif))
-
-Great!
-
-### 
+### Looking forward
 
 Looking forward to scaling this up with more forums
 (model only predicts on ten at the moment),
